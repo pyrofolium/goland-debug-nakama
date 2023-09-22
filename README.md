@@ -1,4 +1,8 @@
+Steps to repo bug:
+
 On an mac M1 with docker Desktop installed make sure this setting is enabled (Rosetta):
+
+
 ![Screenshot 2023-09-22 at 9.44.35 AM.png](Screenshot%202023-09-22%20at%209.44.35%20AM.png)
 
 then in a shell run this:
