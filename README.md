@@ -1,1 +1,1 @@
-docker compose -f docker-compose.yml up --build cardinal
+`docker compose -f docker-compose.yml up --build nakama`
