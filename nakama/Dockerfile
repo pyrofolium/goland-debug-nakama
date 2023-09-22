@@ -21,4 +21,4 @@ COPY --from=go-builder /go/bin/dlv /nakama
 COPY --from=go-builder /backend/backend.so /nakama/data/modules/
 COPY local.yml /nakama/data/
 
-#ENTRYPOINT [ "/bin/bash" ]
+ENTRYPOINT [ "/bin/bash" ]

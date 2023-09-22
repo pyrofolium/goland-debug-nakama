@@ -26,12 +26,12 @@ services:
       dockerfile: Dockerfile
     depends_on:
       - postgres
-    entrypoint:
-      - "/bin/sh"
-      - "-ecx"
-      - >
-        /nakama/nakama migrate up --database.address postgres:localdb@postgres:5432/nakama &&
-        /nakama/dlv --log --log-output=debugger --listen=:40001 --headless=true --api-version=2 --accept-multiclient exec /nakama/nakama -- --config /nakama/data/local.yml --database.address postgres:localdb@postgres:5432/nakama
+#    entrypoint:
+#      - "/bin/sh"
+#      - "-ecx"
+#      - >
+#        /nakama/nakama migrate up --database.address postgres:localdb@postgres:5432/nakama &&
+#        /nakama/dlv --log --log-output=debugger --listen=:40001 --headless=true --api-version=2 --accept-multiclient exec /nakama/nakama -- --config /nakama/data/local.yml --database.address postgres:localdb@postgres:5432/nakama
     extra_hosts:
       - "host.docker.internal:host-gateway"
     expose:
